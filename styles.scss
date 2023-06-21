@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=JosefinSans:wght@300;400;600&display=swap');
+
+:root {
+	//COLORS
+
+	--main-color: hsl(0, 36%, 70%);
+	--soft-red: hsl(0, 93%, 68%);
+
+	--Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+	--linear-one: linear-gradient(
+		135deg,
+		from hsl(0, 0%, 100%),
+		to hsl(0, 100%, 98%)
+	);
+	--linear-two: linear-gradient(
+		135deg,
+		from hsl(0, 80%, 86%),
+		to hsl(0, 74%, 74%)
+	);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+.container {
+	font-family: 'Josefin Sans', sans-serif;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	position: relative;
+	//justify-content: space-between;
+	@media only screen and (max-width: 33.475em) {
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		grid-row-gap: 15rem;
+	}
+
+	&__sideone {
+		padding: 6rem 24.4rem;
+		background: url('img/bg-pattern-desktop.svg');
+		@media only screen and (max-width: 33.475em) {
+			padding: 4rem 3rem 1rem 3rem;
+		}
+	}
+	&__header {
+		@media only screen and (max-width: 33.475em) {
+			grid-row: 1/1;
+			margin-bottom: 10rem;
+			padding-left: 4rem;
+		}
+	}
+
+	&__main-heading {
+		font-size: 5rem;
+		line-height: 1;
+		letter-spacing: 1rem;
+		text-transform: uppercase;
+		color: var(--Dark-Grayish-Red);
+		&--span {
+			font-weight: 200;
+			color: var(--main-color);
+		}
+		@media only screen and (max-width: 33.475em) {
+			text-align: center;
+			margin-top: 30rem;
+		}
+	}
+	&__paragraph {
+		max-width: 35rem;
+		width: 35rem;
+		color: var(--main-color);
+		font-size: 1.1rem;
+		line-height: 1.5;
+		padding: 2rem 0;
+		@media only screen and (max-width: 33.475em) {
+			text-align: center;
+			font-size: 1.5rem;
+		}
+	}
+	&__form {
+		position: relative;
+		margin-bottom: 1.5rem;
+	}
+	&__input {
+		max-width: 35rem;
+		width: 35rem;
+		padding: 0.6rem 1.2rem;
+		color: var(--main-color);
+		caret-color: var(--main-color);
+		outline: none;
+		border-radius: 2rem;
+		border: 2px solid hsl(0, 80%, 86%);
+		@media only screen and (max-width: 33.475em) {
+			padding: 0.8rem 1.2rem;
+			font-size: 1.5rem;
+		}
+	}
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateY(0%);
+		padding: 0.4rem 1.5rem;
+		border-radius: 1rem;
+		border: none;
+		background-image: linear-gradient(
+			135deg,
+			hsl(0, 80%, 86%),
+			hsl(0, 74%, 74%)
+		);
+		transition: all 0.3s ease;
+		&:hover {
+			background-image: linear-gradient(
+				135deg,
+				hsl(0, 0%, 100%),
+				hsl(0, 100%, 98%)
+			);
+			cursor: pointer;
+		}
+		@media only screen and (max-width: 33.475em) {
+			right: 15%;
+			top: 10%;
+		}
+		@media only screen and (max-width: 23.4375em) {
+			right: 0%;
+			top: 9%;
+		}
+	}
+	&__icon {
+		position: absolute;
+		right: 15%;
+		top: 10%;
+		display: none;
+	}
+	&__picture {
+		height: 100vh;
+		//grid-column: 2/2;
+		@media only screen and (max-width: 33.475em) {
+			height: 40%;
+			width: 100%;
+			//grid-row: 2/2;
+			position: absolute;
+			top: 25%;
+			height: 60%;
+		}
+		@media only screen and (max-width: 24.4375em) {
+			top: 10;
+			height: 70%;
+			width: 100%;
+		}
+		@media only screen and (max-width: 23.4375em) {
+			width: 110%;
+			height: 60%;
+			top: 20%;
+		}
+		@media only screen and (max-width: 16.5625em) {
+			height: 70%;
+			width: 100%;
+			margin-left: 8rem;
+		}
+	}
+}
+
+main {
+	//grid-column: 1/1;
+	margin-top: 15rem;
+	padding-right: 2.4rem;
+	@media only screen and (max-width: 33.475em) {
+		grid-row: 3/3;
+
+		padding: 4rem 2rem;
+	}
+	@media only screen and (max-width: 23.4375em) {
+		padding: 1rem 2rem 3rem 2rem;
+	}
+}
+
+.feedback {
+	color: var(--soft-red);
+	font-size: 1.2rem;
+	padding: 2rem;
+	letter-spacing: 0.1rem;
+	display: none;
+}

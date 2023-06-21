@@ -10,11 +10,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 
@@ -33,9 +28,14 @@ Users should be able to:
 
 
 ### Screenshot
-![FireShot Capture 003 - base-apparel-coming-soon-master - 127 0 0 1](https://github.com/OONelson/base-apparel-coming-soon-master/as![FireShot Capture 004 - base-apparel-coming-soon-master - 127 0 0 1](https://github.com/OONelson/base-apparel-coming-soon-master/assets/114698224/9bd5d3b7-3e09-472b-90df-eb1abd74a3f5)
-sets/114698224/aa2a6caf-7c80-4fb9-a7ce-036f8563421c)
+![FireShot Capture 003 - base-apparel-coming-soon-master - 127 0 0 1](https://github.com/OONelson/base-apparel-coming-soon-master/assets/114698224/78285b7b-2509-4b0e-b98f-bc930b4c8f1f)
+![FireShot Capture 004 - base-apparel-coming-soon-master - 127 0 0 1](https://github.com/OONelson/base-apparel-coming-soon-master/assets/114698224/f7a016b5-54c4-4f0c-8484-16d658a64f3d)
 
 ### Links
 
+https://base-apparel-coming-soon-masterrr.netlify.app/
+
+
+- [Built with](#built-with)
+- scss, flexbox, javascript
 
